@@ -10,7 +10,7 @@ exports.seed = function(knex) {
           make: 'Acura',
           model: 'Integra',
           mileage: 123451,
-          transmissionType: 'Manual',
+          transmissionType: 'manual',
           statusOfTitle: 'clean',
         },
         {
@@ -31,7 +31,7 @@ exports.seed = function(knex) {
           make: 'Honda',
           model: 'CR-V EX',
           mileage: 92821,
-          transmissionType: 'Automatic',
+          transmissionType: 'automatic',
           statusOfTitle: 'clean',
         },
       ]);

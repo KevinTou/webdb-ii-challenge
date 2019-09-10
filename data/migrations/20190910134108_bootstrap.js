@@ -3,25 +3,25 @@ exports.up = function(knex) {
     // id, primary key, auto-increment, integer
     tbl.increments();
 
-    // vin, string (128), unique, required(notNullable)
+    // vin, string (17), unique, required(notNullable)
     tbl
-      .string('vin', 128)
+      .string('vin', 17)
       .unique()
       .notNullable();
 
-    // make, string (128), required(notNullable)
-    tbl.string('make', 128).notNullable();
+    // make, string, required(notNullable)
+    tbl.string('make').notNullable();
 
-    // model, string (128), required(notNullable)
-    tbl.string('model', 128).notNullable();
+    // model, string, required(notNullable)
+    tbl.string('model').notNullable();
 
     // mileage, integer, required(notNullable)
     tbl.integer('mileage').notNullable();
 
-    // vin, string (128), not required(nullable)
+    // vin, string, not required(nullable)
     tbl.string('transmissionType').nullable();
 
-    // vin, string (128), not required(nullable)
+    // vin, string, not required(nullable)
     tbl.string('statusOfTitle').nullable();
   });
 };
